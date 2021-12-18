@@ -48,11 +48,11 @@ set nohlsearch                          "Prevent highlighting everything during 
 set ignorecase
 set smartcase
 
-" Because we have persistent undo 
+" Because we have persistent undo
 set noswapfile
 set nobackup
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
-cmap w!! w !sudo tee % 
+cmap w!! w !sudo tee %

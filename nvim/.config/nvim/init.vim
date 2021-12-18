@@ -1,15 +1,14 @@
+source ~/.config/nvim/settings.vim
+source ~/.config/nvim/mappings.vim
+source ~/.config/nvim/pluginstall.vim
 
-source settings.vim
-source mappings.vim
-source pluginstall.vim
+source ~/.config/nvim/lsp-config.lua
 
-source lsp-config.lua
+source ~/.config/nvim/plugins/gruvbox.vim
+source ~/.config/nvim/plugins/undootree.vim
+source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/ale.vim
+source ~/.config/nvim/plugins/fugitive.vim
 
-source plugins/gruvbox.vim
-source plugins/undootree.vim
-source plugins/nerdtree.vim
-source plugins/ale.vim
-source plugins/fugitive.vim
-
-luafile plugins/hop.lua
-luafile plugins/nvim-comment.lua
+luafile ~/.config/nvim/plugins/hop.lua
+luafile ~/.config/nvim/plugins/nvim-comment.lua
