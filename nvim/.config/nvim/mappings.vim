@@ -1,7 +1,7 @@
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
-nnoremap <A-f> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeToggle<CR>
 nnoremap <A-u> :UndotreeToggle<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
@@ -50,7 +50,7 @@ nnoremap n nzzzv
 " Harpoon for navigation between files
 nnoremap <silent><leader>a :lua require("harpoon.mark").add_file()<CR>
 nnoremap <silent><C-e> :lua require("harpoon.ui").toggle_quick_menu()<CR>
-nnoremap <silent><F1> :lua require("harpoon.ui").nav_file(1)<CR>
-nnoremap <silent><F2> :lua require("harpoon.ui").nav_file(2)<CR>
-nnoremap <silent><F3> :lua require("harpoon.ui").nav_file(3)<CR>
-nnoremap <silent><F4> :lua require("harpoon.ui").nav_file(4)<CR>
+nnoremap <silent><F13> :lua require("harpoon.ui").nav_file(1)<CR>
+nnoremap <silent><F14> :lua require("harpoon.ui").nav_file(2)<CR>
+nnoremap <silent><F15> :lua require("harpoon.ui").nav_file(3)<CR>
+nnoremap <silent><F16> :lua require("harpoon.ui").nav_file(4)<CR>
