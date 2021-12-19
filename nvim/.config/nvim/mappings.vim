@@ -28,7 +28,7 @@ xmap <C-c> :CommentToggle<CR>
 inoremap <silent><expr> <C-Space> compe#complete()
 
 " With this you can enter ":Config" in normal mode and enter the vimrc
-command! Config execute ":e $HOME/workspace/nvim/init.vim"
+command! Config execute ":e $HOME/.config/nvim/init.vim"
 
 "
 " Easymotion writting in lua, with single or multi character hop

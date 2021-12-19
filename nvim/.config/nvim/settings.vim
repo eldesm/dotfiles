@@ -1,6 +1,7 @@
 set title
 set titlestring=nvim
 
+filetype plugin on                      " Allows for file specific configuration in after/ftplugin
 
 " set leader key
 let g:mapleader = "\<Space>"
