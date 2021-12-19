@@ -1,3 +1,7 @@
+set title
+set titlestring=nvim
+
+
 " set leader key
 let g:mapleader = "\<Space>"
 
