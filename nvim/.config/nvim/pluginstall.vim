@@ -42,4 +42,12 @@ Plug 'fedepujol/move.nvim'
 " Switching between files with the fewest amount of keystrokes
 Plug 'ThePrimeagen/harpoon'
 
+" --- FRONTEND RELATED PLUGINS
+
+" Preview colours in source code while editing
+Plug 'ap/vim-css-color'
+
+" Auto close (X)HTML tags
+Plug 'alvan/vim-closetag'
+
 call plug#end()
