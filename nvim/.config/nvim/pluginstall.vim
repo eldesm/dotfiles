@@ -42,8 +42,4 @@ Plug 'fedepujol/move.nvim'
 " Switching between files with the fewest amount of keystrokes
 Plug 'ThePrimeagen/harpoon'
 
-" For Markdown shizzle
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-
 call plug#end()

@@ -32,8 +32,8 @@ command! Config execute ":e $HOME/.config/nvim/init.vim"
 
 "
 " Easymotion writting in lua, with single or multi character hop
- map s :HopChar2<CR>
- map s<Space> :HopChar1<CR>
+map s :HopChar2<CR>
+map s<Space> :HopChar1<CR>
 
  " Shift + j/k moves selected bloc down/up in visual mode
 vnoremap <silent> <S-k> :MoveBlock(-1)<CR>
