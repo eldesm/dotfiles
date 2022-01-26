@@ -1,7 +1,9 @@
 call plug#begin()
 
 " Best colorscheme in the world
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
+" Plug 'sainnhe/sonokai'
+Plug 'tanvirtin/monokai.nvim'
 
 " Lean & mean status/tabline for vim that's light as air.
 Plug 'vim-airline/vim-airline'

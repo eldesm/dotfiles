@@ -70,3 +70,11 @@ require'lspconfig'.pyright.setup{}
 
 -- Has to be installed with: npm install -g typescript typescript-language-server
 require'lspconfig'.tsserver.setup{}
+
+-- Has to be installed with npm i -g vscode-langservers-extracted
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
+require'lspconfig'.cssls.setup {
+  capabilities = capabilities,
+}

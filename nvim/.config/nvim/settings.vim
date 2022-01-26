@@ -1,3 +1,5 @@
+
+
 set title
 set titlestring=nvim
 
@@ -71,3 +73,5 @@ function! Numbers()
 endfunction
 xnoremap in :<C-u>call Numbers()<CR>
 onoremap in :normal vin<CR>
+
+colorscheme monokai_pro
