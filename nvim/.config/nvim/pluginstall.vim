@@ -1,7 +1,7 @@
 call plug#begin()
 
-" Best colorscheme in the world
 " Plug 'morhetz/gruvbox'
+" Best colorscheme in the world
 " Plug 'sainnhe/sonokai'
 Plug 'tanvirtin/monokai.nvim'
 
@@ -44,10 +44,14 @@ Plug 'fedepujol/move.nvim'
 " Switching between files with the fewest amount of keystrokes
 Plug 'ThePrimeagen/harpoon'
 
+" This plugin adds indentation guides to all lines (including empty lines)
+Plug 'lukas-reineke/indent-blankline.nvim'
+
+
 " --- FRONTEND RELATED PLUGINS
 
 " Preview colours in source code while editing
-Plug 'ap/vim-css-color'
+Plug 'norcalli/nvim-colorizer.lua'
 
 " Auto close (X)HTML tags
 Plug 'alvan/vim-closetag'
