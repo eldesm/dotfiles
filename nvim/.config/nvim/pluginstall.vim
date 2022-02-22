@@ -1,6 +1,6 @@
 call plug#begin()
 
-" Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 " Best colorscheme in the world
 " Plug 'sainnhe/sonokai'
 Plug 'tanvirtin/monokai.nvim'
@@ -30,6 +30,10 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 
+" Stuff required for Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+
 " Beautifull plugin that allows for very quick surrounding
 Plug 'tpope/vim-surround'
 
@@ -55,5 +59,12 @@ Plug 'norcalli/nvim-colorizer.lua'
 
 " Auto close (X)HTML tags
 Plug 'alvan/vim-closetag'
+
+
+" A super powerful autopair plugin for Neovim that supports multiple characters.
+Plug 'windwp/nvim-autopairs'
+
+" Improvements to the handling of Django related files in Vim
+" Plug 'tweekmonster/django-plus.vim'
 
 call plug#end()

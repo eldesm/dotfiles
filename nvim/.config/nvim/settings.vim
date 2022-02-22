@@ -75,4 +75,4 @@ xnoremap in :<C-u>call Numbers()<CR>
 onoremap in :normal vin<CR>
 
 set termguicolors
-colorscheme monokai_pro
+colorscheme gruvbox

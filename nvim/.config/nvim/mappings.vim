@@ -13,6 +13,14 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+
+" Navigation while in insert mode
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+" inoremap <C-j> <Down>
+" inoremap <C-k> <Up>
+
+
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv

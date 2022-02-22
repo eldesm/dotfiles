@@ -69,11 +69,15 @@ cmp.setup {
 require'lspconfig'.pyright.setup{}
 
 -- Has to be installed with: npm install -g typescript typescript-language-server
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.tsserver.setup{
+  filetypes = { "javascript" },
+  root_dir = function() return vim.loop.cwd() end      -- run lsp for javascript in any directory
+}
 
 -- Has to be installed with npm i -g vscode-langservers-extracted
 require'lspconfig'.html.setup {
   capabilities = capabilities,
+  filetypes = { "html", "htmldjango" },
 }
 require'lspconfig'.cssls.setup {
   capabilities = capabilities,
