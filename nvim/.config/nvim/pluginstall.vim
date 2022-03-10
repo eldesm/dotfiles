@@ -61,10 +61,12 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'alvan/vim-closetag'
 
 
-" A super powerful autopair plugin for Neovim that supports multiple characters.
+" A super powerful autopair plugin for Neovim that supports multiple characters."
 Plug 'windwp/nvim-autopairs'
 
 " Improvements to the handling of Django related files in Vim
 " Plug 'tweekmonster/django-plus.vim'
+"
+"
 
 call plug#end()
