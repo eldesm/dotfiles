@@ -1,3 +1,6 @@
+" Gruvbox theme for neovim with full 🎄TreeSitter support.
+set termguicolors
+colorscheme gruvbox
 
 
 set title
@@ -73,8 +76,3 @@ function! Numbers()
 endfunction
 xnoremap in :<C-u>call Numbers()<CR>
 onoremap in :normal vin<CR>
-
-set termguicolors
-colorscheme gruvbox
-
-"

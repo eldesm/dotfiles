@@ -1,7 +1,10 @@
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
-nnoremap <C-f> :NERDTreeToggle<CR>
+
+nnoremap <C-f> :NvimTreeToggle<CR>
+
+" nnoremap <C-f> :NERDTreeToggle<CR>
 nnoremap <A-u> :UndotreeToggle<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
@@ -31,7 +34,6 @@ inoremap kj <Esc>
 
 " Commenting
 nmap <C-c> :CommentToggle<CR>
-xmap <C-c> :CommentToggle<CR>
 
 inoremap <silent><expr> <C-Space> compe#complete()
 

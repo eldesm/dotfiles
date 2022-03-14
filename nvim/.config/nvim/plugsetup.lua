@@ -1,5 +1,21 @@
-require'colorizer'.setup()
+-- A blazing fast and easy to configure Neovim statusline written in Lua.
+require('lualine').setup{
+    options = {
+        icons_enabled = false,
+        theme = 'gruvbox'
+      },
+}
 
+--  A file explorer tree for neovim written in lua
+vim.g.nvim_tree_show_icons = {
+  git = 0,
+  folders = 0,
+  files = 0,
+  folder_arrows = 0,
+} -- this disables icons
+require'nvim-tree'.setup()
+
+-- require'colorizer'.setup()
 
 vim.opt.list = true
 vim.opt.listchars:append("eol:↴")
@@ -26,7 +42,7 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
 
     -- list of language that will be disabled
-    disable = { "c", "rust" },
+    -- disable = { "c", "rust" },
 
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).

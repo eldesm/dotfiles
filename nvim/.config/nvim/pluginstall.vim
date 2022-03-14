@@ -1,16 +1,17 @@
 call plug#begin()
 
-Plug 'morhetz/gruvbox'
+" A blazing fast and easy to configure Neovim statusline written in Lua.
+Plug 'nvim-lualine/lualine.nvim'
+
 " Best colorscheme in the world
-" Plug 'sainnhe/sonokai'
-Plug 'tanvirtin/monokai.nvim'
+Plug 'morhetz/gruvbox'
 
-" Lean & mean status/tabline for vim that's light as air.
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"  A file explorer tree for neovim written in lua
+Plug 'kyazdani42/nvim-tree.lua'
 
+"
 Plug 'mbbill/undotree'
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 
 Plug 'svermeulen/vim-easyclip'
@@ -63,10 +64,5 @@ Plug 'alvan/vim-closetag'
 
 " A super powerful autopair plugin for Neovim that supports multiple characters."
 Plug 'windwp/nvim-autopairs'
-
-" Improvements to the handling of Django related files in Vim
-" Plug 'tweekmonster/django-plus.vim'
-"
-"
 
 call plug#end()

@@ -83,6 +83,10 @@ require'lspconfig'.cssls.setup {
   capabilities = capabilities,
 }
 
-require'lspconfig'.sourcekit.setup{
-  root_dir = function() return vim.loop.cwd() end      -- run lsp for javascript in any directory
-}
+-- require'lspconfig'.ccls.setup{
+--   root_dir = function() return vim.loop.cwd() end      -- run lsp for javascript in any directory
+-- }
+--
+-- require'lspconfig'.sourcekit.setup{
+--   root_dir = function() return vim.loop.cwd() end      -- run lsp for javascript in any directory
+-- }
