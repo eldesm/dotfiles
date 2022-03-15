@@ -1,5 +1,5 @@
-source ~/.config/nvim/plugsetup.lua
 source ~/.config/nvim/pluginstall.vim
+source ~/.config/nvim/plugsetup.lua
 source ~/.config/nvim/settings.vim
 
 source ~/.config/nvim/mappings.vim
