@@ -17,6 +17,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 
+
+
 " Navigation while in insert mode
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>

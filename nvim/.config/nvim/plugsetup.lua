@@ -15,6 +15,18 @@ vim.g.nvim_tree_show_icons = {
 } -- this disables icons
 require'nvim-tree'.setup()
 
+
+-- For hopping arround to single or double characters with s
+require'hop'.setup()
+
+-- A neovim plugin to persist and toggle multiple terminals during an editing session
+require("toggleterm").setup( {
+    open_mapping = [[<c-t>]],
+    direction = "float",
+    terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
+})
+
+
 -- require'colorizer'.setup()
 
 vim.opt.list = true

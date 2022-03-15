@@ -65,4 +65,7 @@ Plug 'alvan/vim-closetag'
 " A super powerful autopair plugin for Neovim that supports multiple characters."
 Plug 'windwp/nvim-autopairs'
 
+" A neovim lua plugin to help easily manage multiple terminal windows
+Plug 'akinsho/toggleterm.nvim'
+
 call plug#end()
