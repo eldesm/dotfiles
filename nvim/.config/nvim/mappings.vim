@@ -4,7 +4,6 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
 nnoremap <C-f> :NvimTreeToggle<CR>
 
-" nnoremap <C-f> :NERDTreeToggle<CR>
 nnoremap <A-u> :UndotreeToggle<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
@@ -35,7 +34,10 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 
 " Commenting
-nmap <C-c> :CommentToggle<CR>
+xmap <C-c> <Plug>Commentary
+nmap <C-c> <Plug>Commentary
+omap <C-c> <Plug>Commentary
+nmap <C-c> <Plug>CommentaryLine
 
 inoremap <silent><expr> <C-Space> compe#complete()
 

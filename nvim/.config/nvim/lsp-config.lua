@@ -79,6 +79,7 @@ require'lspconfig'.html.setup {
   capabilities = capabilities,
   filetypes = { "html", "htmldjango" },
 }
+
 require'lspconfig'.cssls.setup {
   capabilities = capabilities,
 }

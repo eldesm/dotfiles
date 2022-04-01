@@ -2,18 +2,10 @@
 require('lualine').setup{
     options = {
         icons_enabled = false,
-        theme = 'gruvbox'
+        theme = 'auto'
       },
 }
 
---  A file explorer tree for neovim written in lua
-vim.g.nvim_tree_show_icons = {
-  git = 0,
-  folders = 0,
-  files = 0,
-  folder_arrows = 0,
-} -- this disables icons
-require'nvim-tree'.setup()
 
 
 -- For hopping arround to single or double characters with s
@@ -28,6 +20,30 @@ require("toggleterm").setup( {
 
 
 require'colorizer'.setup()
+
+
+
+-- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua. 
+require("null-ls").setup({
+    sources = {
+        require("null-ls").builtins.formatting.black,
+        require("null-ls").builtins.formatting.prettier,
+    },
+
+    -- for autoformat on savevim.lsp.buf
+     on_attach = function(client)
+        if client.resolved_capabilities.document_formatting then
+            vim.cmd([[
+            augroup LspFormatting
+                autocmd! * <buffer>
+                autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
+            augroup END
+            ]])
+        end
+    end,
+})
+
+
 
 vim.opt.list = true
 vim.opt.listchars:append("eol:↴")

@@ -11,8 +11,8 @@ Plug 'kyazdani42/nvim-tree.lua'
 
 "
 Plug 'mbbill/undotree'
-" Plug 'scrooloose/nerdtree'
-Plug 'w0rp/ale'
+
+Plug 'jose-elias-alvarez/null-ls.nvim'
 
 Plug 'svermeulen/vim-easyclip'
 
@@ -38,7 +38,10 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Beautifull plugin that allows for very quick surrounding
 Plug 'tpope/vim-surround'
 
-Plug 'terrortylor/nvim-comment'
+
+Plug 'tpope/vim-commentary'
+
+" Plug 'terrortylor/nvim-comment'
 
 " For hopping arround to single or double characters with s
 Plug 'phaazon/hop.nvim'

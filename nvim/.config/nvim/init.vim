@@ -8,7 +8,9 @@ source ~/.config/nvim/lsp-config.lua
 
 source ~/.config/nvim/plugins/undootree.vim
 source ~/.config/nvim/plugins/nerdtree.vim
-source ~/.config/nvim/plugins/ale.vim
+" source ~/.config/nvim/plugins/ale.vim
 source ~/.config/nvim/plugins/fugitive.vim
 
-luafile ~/.config/nvim/plugins/nvim-comment.lua
+
+" Individual lua files
+luafile ~/.config/nvim/lua/user/nvim-tree.lua
