@@ -4,13 +4,12 @@ source ~/.config/nvim/plugsetup.lua
 
 source ~/.config/nvim/mappings.vim
 
-source ~/.config/nvim/lsp-config.lua
 
 source ~/.config/nvim/plugins/undootree.vim
-source ~/.config/nvim/plugins/nerdtree.vim
-" source ~/.config/nvim/plugins/ale.vim
 source ~/.config/nvim/plugins/fugitive.vim
 
 
 " Individual lua files
-luafile ~/.config/nvim/lua/user/nvim-tree.lua
+source ~/.config/nvim/lua/user/nvim-tree.lua
+source ~/.config/nvim/lsp-config.lua
+" luafile ~/.config/nvim/lua/user/highlight-yank.lua

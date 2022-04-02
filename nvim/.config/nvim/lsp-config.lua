@@ -80,6 +80,15 @@ require'lspconfig'.html.setup {
   filetypes = { "html", "htmldjango" },
 }
 
+-- Moves all formatting functionality to null-ls
+require("lspconfig").html.setup({
+    on_attach = function(client)
+        client.resolved_capabilities.document_formatting = false
+        client.resolved_capabilities.document_range_formatting = false
+    end,
+})
+
+
 require'lspconfig'.cssls.setup {
   capabilities = capabilities,
 }

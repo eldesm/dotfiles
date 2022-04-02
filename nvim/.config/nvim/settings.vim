@@ -76,3 +76,9 @@ function! Numbers()
 endfunction
 xnoremap in :<C-u>call Numbers()<CR>
 onoremap in :normal vin<CR>
+
+" highlight yanked area
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=500}
+augroup END

@@ -31,7 +31,7 @@ require("null-ls").setup({
     },
 
     -- for autoformat on savevim.lsp.buf
-     on_attach = function(client)
+    on_attach = function(client)
         if client.resolved_capabilities.document_formatting then
             vim.cmd([[
             augroup LspFormatting
@@ -42,6 +42,7 @@ require("null-ls").setup({
         end
     end,
 })
+
 
 
 
