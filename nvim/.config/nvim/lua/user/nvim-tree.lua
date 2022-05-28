@@ -1,12 +1,16 @@
--- A file explorer tree for neovim written in lua
-
--- this disables icons
-vim.g.nvim_tree_show_icons = {
-  git = 0,
-  folders = 0,
-  files = 0,
-  folder_arrows = 0,
+require'nvim-tree'.setup{
+    renderer = {
+        icons = {
+            git_placement = "before",
+            padding = " ",
+            symlink_arrow = " ➛ ",
+            show = {
+                file = false,
+                folder = false,
+                folder_arrow = false,
+                git = false,
+            },
+        },
+    },
 }
-
-require'nvim-tree'.setup()
 
