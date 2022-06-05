@@ -71,4 +71,10 @@ Plug 'windwp/nvim-autopairs'
 " A neovim lua plugin to help easily manage multiple terminal windows
 Plug 'akinsho/toggleterm.nvim'
 
+" Twilight is a Lua plugin for Neovim 0.5 that dims inactive portions of the code you're editing using TreeSitter. 
+Plug 'folke/twilight.nvim'
+
+ " Neovim plugin for GitHub Copilot 
+Plug 'github/copilot.vim'
+
 call plug#end()

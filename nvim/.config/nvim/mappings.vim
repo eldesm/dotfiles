@@ -68,3 +68,12 @@ nnoremap <silent><F13> :lua require("harpoon.ui").nav_file(1)<CR>
 nnoremap <silent><F14> :lua require("harpoon.ui").nav_file(2)<CR>
 nnoremap <silent><F15> :lua require("harpoon.ui").nav_file(3)<CR>
 nnoremap <silent><F16> :lua require("harpoon.ui").nav_file(4)<CR>
+
+
+imap <silent><script><expr> <leader><leader> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
+
+imap <Up> <Plug>(copilot-next)
+imap <Down> <Plug>(copilot-previous)
+
+
