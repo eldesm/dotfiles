@@ -105,6 +105,8 @@ return packer.startup(function(use)
     config = get_config("mason")
   }
 
+  use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = get_config("toggleterm")}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
