@@ -46,6 +46,10 @@ vim.keymap.set('n', '<F16>', ':lua require("harpoon.ui").nav_file(4)<CR>')
 vim.keymap.set('n', 'N', 'Nzzzv')
 vim.keymap.set('n', 'n', 'nzzzv')
 
+-- Better tabbing
+vim.keymap.set('v', '<', '<gv')
+vim.keymap.set('v', '>', '>gv')
+
 
 -- 2 character hoppin: 
 vim.keymap.set('n', 's', '<cmd>HopChar2<CR>')
