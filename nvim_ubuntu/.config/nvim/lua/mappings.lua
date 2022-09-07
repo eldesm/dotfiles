@@ -26,11 +26,11 @@ vim.keymap.set('v', '<S-j>', ':MoveBlock(1)<CR>')
 
 
 
--- Delete shouldn't mean cut
-vim.keymap.set('n', 'd', '"_d')
-vim.keymap.set('n', 'dd', '"_dd')
-vim.keymap.set('n', 'c', '"_c')
-vim.keymap.set('n', 'x', '"_x')
+-- Delete or change shouldn't mean cut
+vim.api.nvim_set_keymap('n', 'd', '"_d', {noremap = true})
+vim.api.nvim_set_keymap('n', 'dd', '"_dd', {noremap = true})
+vim.api.nvim_set_keymap('n', 'c', '"_c', {noremap = true})
+vim.api.nvim_set_keymap('n', 'x', '"_x', {noremap = true})
 
 
 -- Harpoon for navigation between files
