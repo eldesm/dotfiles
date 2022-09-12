@@ -53,6 +53,9 @@ vim.keymap.set('v', '>', '>gv')
 
 -- 2 character hoppin: 
 vim.keymap.set('n', 's', '<cmd>HopChar2<CR>')
+vim.keymap.set('v', 's', '<cmd>HopChar2<CR>')
+vim.keymap.set('n', 'S', '<cmd>HopChar1<CR>')
+vim.keymap.set('v', 'S', '<cmd>HopChar1<CR>')
 
 -- Commenting
 vim.keymap.set('n', '<C-c>', '<Plug>(comment_toggle_linewise_current)')
