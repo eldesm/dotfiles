@@ -105,6 +105,7 @@ return packer.startup(function(use)
     config = get_config("mason")
   }
 
+  --  Easily manage multiple terminal windows 
   use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = get_config("toggleterm")}
 
 	-- Automatically set up your configuration after cloning packer.nvim
