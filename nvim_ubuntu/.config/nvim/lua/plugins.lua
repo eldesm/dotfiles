@@ -108,6 +108,9 @@ return packer.startup(function(use)
   --  Easily manage multiple terminal windows 
   use {"akinsho/toggleterm.nvim", tag = 'v2.*', config = get_config("toggleterm")}
 
+  --  Vim and Neovim plugin to reveal the commit messages under the cursor 
+  use {"rhysd/git-messenger.vim"}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
