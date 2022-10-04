@@ -110,6 +110,13 @@ return packer.startup(function(use)
 
   --  Vim and Neovim plugin to reveal the commit messages under the cursor 
   use {"rhysd/git-messenger.vim"}
+  
+
+  --  Nvim Treesitter configurations and abstraction layer 
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
