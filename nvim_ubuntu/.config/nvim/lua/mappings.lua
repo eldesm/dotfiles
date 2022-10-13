@@ -31,6 +31,10 @@ vim.api.nvim_set_keymap('n', 'd', '"_d', {noremap = true})
 vim.api.nvim_set_keymap('n', 'dd', '"_dd', {noremap = true})
 vim.api.nvim_set_keymap('n', 'c', '"_c', {noremap = true})
 vim.api.nvim_set_keymap('n', 'x', '"_x', {noremap = true})
+vim.api.nvim_set_keymap('v', 'd', '"_d', {noremap = true})
+vim.api.nvim_set_keymap('v', 'dd', '"_dd', {noremap = true})
+vim.api.nvim_set_keymap('v', 'c', '"_c', {noremap = true})
+vim.api.nvim_set_keymap('v', 'x', '"_x', {noremap = true})
 
 
 -- Harpoon for navigation between files
