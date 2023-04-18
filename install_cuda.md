@@ -22,16 +22,30 @@ Download cuDNN here: https://developer.nvidia.com/cudnn
 
 Download version: Download cuDNN v8.4.1 (May 27th, 2022), for CUDA 11.x
 
-Download: Local Installer for Ubuntu20.04 x86_64 (Deb)
+Download: Local Installer for Linux x86_64 (Tar)
 
 Then run the following commands:
 
-cudnn-local-repo-ubuntu2004-8.4.1.50_1.0-1_amd64
 ```
-sudo dpkg -i cudnn-local-repo-ubuntu2004-8.4.1.50_1.0-1_amd64.deb
-sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get install libcudnn8=8.4.1.50-1+cuda11.7
-sudo apt-get install libcudnn8-dev=8.4.1.50-1+cuda11.7
-sudo apt-get install libcudnn8-samples=8.4.1.50-1+cuda11.7
+tar -xvf cudnn-linux-x86_64-8.4.1.50_cuda11.6-archive.tar.xz
+sudo cp cudnn-*-archive/include/cudnn*.h /usr/local/cuda/include 
+sudo cp -P cudnn-*-archive/lib/libcudnn* /usr/local/cuda/lib64 
+sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 ```
+
+
+
+# Installing the correct GPU version of Paddle
+
+
+```
+python3 -m pip install paddlepaddle-gpu==2.4.2.post117 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
+
+```
+
+And check in python if it is installed correctly:
+```
+import paddle
+paddle.utils.run_check()
+```
+
